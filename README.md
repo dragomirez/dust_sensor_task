@@ -38,8 +38,16 @@ SOLUTION:
 
  2 Automate the script with Jenkins: 
 
- 
+  - Go to Jenkins and create a new project ("Github Integration Plugin" is required. So, go to "Manage Jenkins/Manage Plugins/Available". In search bar write "Github Integration Plugin" and download it. Don't forget to check "Restart Jenkins when the installation is complete").
 
+   - Give a name to your project and click on the "Freestyle project". Copy your GitHub project URL and paste it in "Github project/ Project url".
+
+   - Go to "Source Code Management and" and add a repository URL. 
+
+   - Then go to "Build Triggers" and check "Build periodically". In the question mark, you can find the syntax of cron. We want to make Jenkins execute the script on every two hours. Sp we will do: "H H/2 * * *".
+
+ 
+    - Next, check on "GitHub hook trigger for GITScm polling". Then go back to GitHub repository settings and open "Webhooks/Add webhook". In "Payload URL" add your Jenkins URL and "/github-webhook/"like in this example: "http//jenkins-host:8080//github-webhook/" and click "save". 
 
 
 Resources: 
