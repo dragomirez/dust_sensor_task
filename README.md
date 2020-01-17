@@ -44,10 +44,10 @@ SOLUTION:
 
    - Go to "Source Code Management and" and add a repository URL. 
 
-   - Then go to "Build Triggers" and check "Build periodically". In the question mark, you can find the syntax of cron. We want to make Jenkins execute the script on every two hours. Sp we will do: "H H/2 * * *".
+   - Then go to "Build Triggers" and check "Build periodically". In the question mark, you can find the syntax of cron. We want to make Jenkins execute the script on every two hours. Sp we will do: "H H/2 * * *".   
+   
+   - Next, check on "GitHub hook trigger for GITScm polling". Then go back to GitHub repository settings and open "Webhooks/Add webhook". In "Payload URL" add your Jenkins URL and "/github-webhook/"like in this example: "http//jenkins-host:8080//github-webhook/" and click "save". 
 
- 
-    - Next, check on "GitHub hook trigger for GITScm polling". Then go back to GitHub repository settings and open "Webhooks/Add webhook". In "Payload URL" add your Jenkins URL and "/github-webhook/"like in this example: "http//jenkins-host:8080//github-webhook/" and click "save". 
 
 
 Resources: 
