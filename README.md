@@ -1,6 +1,17 @@
 # dust_sensor_task
-Read values of sensor SDS011
+Read values of a dust sensor 10001:
 
+jq-1.5 is required, so before you start be shure you installed on your operation system.
+
+For CentOs:
+  sudo yum install jq -y 
+  jq --version
+
+For Ubuntu:
+  sudo apt install jq -y
+  jq --version
+  
+  
 How to create sensor scrip in a few steps:
 
 TASK:
