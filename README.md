@@ -1,7 +1,7 @@
 # dust_sensor_task
 Read values of a dust sensor 10001:
 
-A jq-1.5 is required. Make sure you already have installed it. 
+A jq-1.5 is required. Before you run the script install jq with one of the following commands: . 
 
 For CentOs:
 
