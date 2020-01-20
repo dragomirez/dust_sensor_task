@@ -32,7 +32,7 @@ script that can be executed from Linux command line which should return in
 stdout the timestamp of the reading and the values for PM 10 and PM 2.5
 dust particles 
 
-How can you automate the script to be executed every 2nd hour with Jenkin:
+How can you automate the script to be executed every 2nd hour with Jenkins:
 
 Send your solution to d.sotirov@sap.com and borislav.arnaudov@sap.com
 
