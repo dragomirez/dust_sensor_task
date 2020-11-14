@@ -32,3 +32,7 @@ script that can be executed from Linux command line which should return in
 stdout the timestamp of the reading and the values for PM 10 and PM 2.5
 dust particles 
 
+To execute the script on every 2 hours run:
+"crontab -e"
+AND add:
+0 */2 * * * /path/to/the/scritp 
